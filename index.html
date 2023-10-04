@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin 10 PPLG 3</title>
+        <link rel="icon" href="gambar/logo.png">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- app css -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second">
+            <a href="index.html" class="mb-logo">Kantin PPLG 3</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <a href="#" class="logo">Kantin PPLG 3</a>
+                    <div class="search">
+                        <input type="text" id="search-item" placeholder="Search" onkeyup="search()">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='bx bx-bell'></i></a></li>
+                        <li><a href="product-details.html"><i class='bx bx-cart'></i></a></li>
+                        <li><a href="login.html"><i class='bx bx-user-circle'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">Home</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="product-details.html">Shop<i class='bx bxs-chevron-down'></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Categories</h3>
+                                            <ul>
+                                                <li><a href="product-details.html">Banana Coklat</a></li>
+                                                <li><a href="product-details2.html">Makaroni Pedas</a></li>
+                                                <li><a href="product-details3.html">Bola Susu</a></li>
+                                                <li><a href="product-details4.html">Banana Nugget</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Categories</h3>
+                                            <ul>
+                                                <li><a href="product-details.html">Banana Coklat</a></li>
+                                                <li><a href="product-details2.html">Makaroni Pedas</a></li>
+                                                <li><a href="product-details3.html">Bola Susu</a></li>
+                                                <li><a href="product-details4.html">Banana Nugget</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Categories</h3>
+                                            <ul>
+                                                <li><a href="product-details.html">Banana Coklat</a></li>
+                                                <li><a href="product-details2.html">Makaroni Pedas</a></li>
+                                                <li><a href="product-details3.html">Bola Susu</a></li>
+                                                <li><a href="product-details4.html">Banana Nugget</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Categories</h3>
+                                            <ul>
+                                                <li><a href="product-details.html">Banana Coklat</a></li>
+                                                <li><a href="product-details2.html">Makaroni Pedas</a></li>
+                                                <li><a href="product-details3.html">Bola Susu</a></li>
+                                                <li><a href="product-details4.html">Banana Nugget</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row img-row">
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./gambar/banana coklat.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./gambar/makaroni.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./gambar/bola susu.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./gambar/banana nugget.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="product-details.html">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+
+    <!-- hero section -->
+    <div class="hero">
+        <div class="slider">
+            <div class="container">
+                <!-- slide item -->
+                <div class="slide active">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Banana Nugget
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Nugget pisang adalah salah satu jajanan ikonik dari Makassar. Kalau biasanya digoreng
+                                dengan tepung biasa, pisang yang satu ini digoreng dengan tepung panir sehingga lebih
+                                bertekstur dan renyah di luar. Namun jangan tertukar dengan pisang pasir lho, karena
+                                nugget
+                                pisang umumnya memakai pisang raja dan pisang tanduk yang terasa lebih legit dan
+                                beraroma khas.
+                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <button class="btn-flat btn-hover">
+                                    <a href="product-details4.html"><span>pesan sekarang</span></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img top-down">
+                        <img src="./gambar/banana nugget.jpg" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Makaroni Pedas
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Makaroni Pedas Asin Daun Jeruk | Jajanan ini merupakan hidangan tradisional yang terbuat
+                                dari pasta, cocok dinikmati oleh berbagai usia. Makanan ini termasuk ke dalam produk
+                                pangan komersial
+                                yang terbuat dari tepung terigu dengan kandungan protein rendah atau sedang. Cemilan ini
+                                memiliki bentuk seperti buluh pipa yang dilapisi dengan bumbu cabai dan rempah-rempah
+                                lainnya.
+                                Saat ini, terdapat banyak variasi makaroni yang berbeda, sehingga kamu dapat menyebut
+                                makaroni pedas sebagai varian “makaroni pedas pipa” atau makaroni biasa
+                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <button class="btn-flat btn-hover">
+                                    <a href="product-details2.html"><span>pesan sekarang</span></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img right-left">
+                        <img src="./gambar/makaroni.jpg" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                <!--slide item-->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Banana Coklat
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Pisang cokelat atau kerap disingkat piscok, adalah kudapan manis dari Indonesia yang
+                                terbuat dari irisan pisang dengan cokelat cair atau susu kental manis cokelat, yang
+                                dibungkus dalam kulit tepung tipis mirip crepes,
+                                atau lazim menggunakan kulit lumpia yang kemudian, digoreng dalam rendaman minyak goreng
+                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <button class="btn-flat btn-hover">
+                                    <a href="product-details.html"><span>pesan sekarang</span></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img right-left">
+                        <img src="./gambar/banana coklat.webp" alt="">
+                    </div>
+                </div>
+                <!--end slide item-->
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Bola Susu
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Sesuai namanya, camilan bola-bola susu dibuat dari bahan dasar susu dan tepung tapioka.
+                                Camilan ini mempunyai cita
+                                rasa manis dan tekstur empuk dan lembut. Dilihat dari tampilannya, camilan ini mirip
+                                dengan kue mochi
+                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <button class="btn-flat btn-hover">
+                                    <a href="product-details3.html"><span>pesan sekarang</span></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img left-right">
+                        <img src="./gambar/bola susu.jpg" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+            </div>
+            <!-- slider controller -->
+            <button class="slide-controll slide-next">
+                <i class='bx bxs-chevron-right'></i>
+            </button>
+            <button class="slide-controll slide-prev">
+                <i class='bx bxs-chevron-left'></i>
+            </button>
+            <!-- end slider controller -->
+        </div>
+    </div>
+    <!-- end hero section -->
+
+    <!-- product list -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Menu Makanan</h2>
+            </div>
+            <div class="row" id="latest-products">
+            </div>
+        </div>
+    </div>
+    <div class="section-footer">
+        <a href="index.html" class="btn-flat btn-hover">lihat lainnya</a>
+    </div>
+    </div>
+    </div>
+    <!-- end product list -->
+
+    <!-- special product -->
+    <div class="bg-second">
+        <div class="section container">
+            <div class="row">
+                <div class="col-4 col-md-4">
+                    <div class="sp-item-img">
+                        <img src="./gambar/poto bareng.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-7 col-md-8">
+                    <div class="sp-item-info">
+                        <div class="sp-item-name">MY TEAM</div>
+                        <p class="sp-item-description">
+                            - Muhammad Noval Supriyadi | Frontend Developer
+                            <br>- Muhammad Hasbi | Web Design
+                            <br>- Muhammad Naufal Abdul Malik | Web Design
+                            <br>- Muhammad Alvarizi Maulana | Web Design
+                            <br>- Muhammad Hasbi | Web Design
+                            <br>- Muhammad Fathir | Web Design
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end special product -->
+
+    <!-- product list -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Best Seller</h2>
+            </div>
+            <div class="row" id="best-products">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="index.html" class="btn-flat btn-hover">view all</a>
+            </div>
+        </div>
+    </div>
+    <!-- end product list -->
+
+    <!-- blogs -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Blog</h2>
+            </div>
+            <div class="blog">
+                <div class="blog-img">
+                    <img src="./gambar/banana nugget.jpg" alt="">
+                </div>
+                <div class="blog-info">
+                    <div class="blog-title">
+                        <h4>Banana Nugget</h4>
+                    </div>
+                    <div class="blog-preview">
+                        Pisang Nugget adalah salah satu jajanan ikonik dari Makassar dimana pisang ini digoreng dengan
+                        tepung panir / tepung roti sehingga lebih bertekstur dan renyah di luar. Tapi jangan tertukar
+                        dengan pisang pasir ya, karena Pisang Nugget umumnya menggunakan pisang raja atau pisang tanduk
+                        atau pisang kepok yang terasa lebih legit dan beraroma khas. Rasa Pisang Nugget ini renyah
+                        sekaligus empuk dan lembut di dalam dimana kalau
+                        olahan nugget itu biasanya asin tapi untuk Pisang Nugget ini memiliki rasa yang manis.
+                    </div>
+                </div>
+            </div>
+            <div class="blog row-revere">
+                <div class="blog-img">
+                    <img src="./gambar/makaroni.jpg" alt="">
+                </div>
+                <div class="blog-info">
+                    <div class="blog-title">
+                        <h3>Makaroni Pedas</h3>
+                    </div>
+                    <div class="blog-preview">
+                        jajanan ini merupakan hidangan tradisional yang terbuat dari pasta, cocok dinikmati oleh
+                        berbagai usia. Makanan ini termasuk ke dalam produk pangan komersial yang terbuat dari tepung
+                        terigu dengan kandungan protein rendah atau sedang.
+                        Cemilan ini memiliki bentuk seperti buluh pipa yang dilapisi dengan bumbu cabai dan
+                        rempah-rempah lainnya. Saat ini, terdapat banyak variasi makaroni yang berbeda, sehingga kamu
+                        dapat menyebut makaroni pedas sebagai varian “makaroni pedas pipa” atau makaroni biasa.
+                        Makaroni Pedas Asin adalah camilan paling populer dari makaroni dengan cita rasa pedas. Makaroni
+                        merupakan bahan dasar makanan yang terbuat dari tepung terigu atau gandum, sehingga cocok untuk
+                        diolah dengan cara digoreng maupun dikukus.
+                        Bentuknya pun bervariasi, mulai dari buluh pita, tabung dengan lubang, panjang, pendek, dan
+                        beragam lainnya. Makaroni Nion Nion memiliki tekstur yang renyah dan rasa pedas yang membuat
+                        para penikmatnya sulit berhenti menikmati makaroni ini.
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="#" class="btn-flat btn-hover">view all</a>
+            </div>
+        </div>
+    </div>
+    <!-- end blogs -->
+
+    <!-- footer -->
+    <footer class="bg-second">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Hubungi Kami</h3>
+                    <ul class="menu">
+                        <li><a href="#">No Telpon</a></li>
+                        <li><a href="#">Whatsapp</a></li>
+                        <li><a href="https://www.instagram.com/nopalsppryd/">instagram</a></li>
+                        <li><a href="https://www.instagram.com/16.pplg3/">Instagram Kelas</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Instagram My Team</h3>
+                    <ul class="menu">
+                        <li><a href="https://www.instagram.com/nopalsppryd/">Instagram Noval</a></li>
+                        <li><a href="https://www.instagram.com/si.abi22/">Instagram Hasbi</a></li>
+                        <li><a href="https://www.instagram.com/avmaul/">Instagram Alvarizi</a></li>
+                        <li><a href="https://www.instagram.com/nanti_haus/">Instagram Naufal</a></li>
+                        <li><a href="https://www.instagram.com/bovi.lll/">Instagram Rizky (Jhon)</a></li>
+                        <li><a href="https://www.instagram.com/mfthirf/">instagram Fathir</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="contact">
+                        <h3 class="contact-header">
+                            Contact Me
+                        </h3>
+                        <ul class="contact-socials">
+                            <li><a href="https://www.instagram.com/nopalsppryd/">
+                                    <i class='bx bxl-instagram-alt'></i>
+                                </a></li>
+                            <li><a href="https://github.com/NovalXD/NovalXD">
+                                    <i class='bx bxl-github'></i>
+                                </a></li>
+                            <li><a href="https://wa.me/6281382988679/">
+                                    <i class='bx bxl-whatsapp-square'></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <input type="email" placeholder="Enter">
+                        <button>Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- app js -->
+    <script src="app.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
